@@ -1,14 +1,39 @@
 #include "main.h"
 #include <string.h>
 /**
- * _strcmp -> for comparing purpose
- * @s1: param1
- * @s2: param2
- * Return: integer
+ *
+ *  * _strcmp - Compares pointers to two strings.
+ *
+ *   * @s1: A pointer to the first string to be compared.
+ *
+ *    * @s2: A pointer to the second string to be compared.
+ *
+ *     *
+ *
+ *      * Return: If str1 < str2the first unmatched characters.
+ *
+ *       *         If str1 == str2, 0.
+ *
+ *        *         If str1 > str2,rst unmatched characters.
+ *
  */
-int _srcmp(char *s1, char *s2)
+
+int _strcmp(char *s1, char *s2)
+
 {
-	int result;
-	result = strcmp(s1, s2);
-	return (result);
+
+		while (*s1 && *s2 && *s1 == *s2)
+
+				{
+
+							s1++;
+
+									s2++;
+
+										}
+
+
+
+			return (*s1 - *s2);
+
 }

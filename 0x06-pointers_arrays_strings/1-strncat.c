@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strcat -> function to append some characters
+ * _strncat -> function to append some characters
  * @dest:first param
  * @src: second param
  * @n: 3rd param
@@ -11,5 +11,5 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	strncat(dest, src, n);
-	return (dest)
+	return (dest);
 }
